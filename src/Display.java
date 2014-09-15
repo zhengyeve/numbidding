@@ -26,10 +26,10 @@ public class Display extends javax.swing.JPanel {
   private void initComponents() {
 
     jPanel1 = new javax.swing.JPanel();
-    jButton1 = new javax.swing.JButton();
-    jButton2 = new javax.swing.JButton();
-    jButton3 = new javax.swing.JButton();
-    jButton4 = new javax.swing.JButton();
+    jLabel2 = new javax.swing.JLabel();
+    jLabel1 = new javax.swing.JLabel();
+    jLabel8 = new javax.swing.JLabel();
+    jLabel9 = new javax.swing.JLabel();
     jPanel3 = new javax.swing.JPanel();
     jLabel3 = new javax.swing.JLabel();
     jLabel4 = new javax.swing.JLabel();
@@ -42,27 +42,17 @@ public class Display extends javax.swing.JPanel {
 
     jPanel1.setLayout(new java.awt.GridLayout());
 
-    jButton1.setText("BP1");
-    jButton1.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        jButton1ActionPerformed(evt);
-      }
-    });
-    jPanel1.add(jButton1);
+    jLabel2.setText("BP1");
+    jPanel1.add(jLabel2);
 
-    jButton2.setText("BP2");
-    jButton2.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        jButton2ActionPerformed(evt);
-      }
-    });
-    jPanel1.add(jButton2);
+    jLabel1.setText("BP2");
+    jPanel1.add(jLabel1);
 
-    jButton3.setText("BP3");
-    jPanel1.add(jButton3);
+    jLabel8.setText("BP3");
+    jPanel1.add(jLabel8);
 
-    jButton4.setText("BP4");
-    jPanel1.add(jButton4);
+    jLabel9.setText("BP3");
+    jPanel1.add(jLabel9);
 
     add(jPanel1, java.awt.BorderLayout.PAGE_END);
 
@@ -92,24 +82,16 @@ public class Display extends javax.swing.JPanel {
     add(jPanel2, java.awt.BorderLayout.NORTH);
   }// </editor-fold>//GEN-END:initComponents
 
-  private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    // TODO add your handling code here:
-  }//GEN-LAST:event_jButton1ActionPerformed
-
-  private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    // TODO add your handling code here:
-  }//GEN-LAST:event_jButton2ActionPerformed
-
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.JButton jButton1;
-  private javax.swing.JButton jButton2;
-  private javax.swing.JButton jButton3;
-  private javax.swing.JButton jButton4;
+  private javax.swing.JLabel jLabel1;
+  private javax.swing.JLabel jLabel2;
   private javax.swing.JLabel jLabel3;
   private javax.swing.JLabel jLabel4;
   private javax.swing.JLabel jLabel5;
   private javax.swing.JLabel jLabel6;
   private javax.swing.JLabel jLabel7;
+  private javax.swing.JLabel jLabel8;
+  private javax.swing.JLabel jLabel9;
   private javax.swing.JPanel jPanel1;
   private javax.swing.JPanel jPanel2;
   private javax.swing.JPanel jPanel3;
