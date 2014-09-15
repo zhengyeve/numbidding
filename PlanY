@@ -1,0 +1,76 @@
+designs:
+---------------------------------------------------------
+
+For display:
+---------------------------------------------------------
+
+Page 1: (Grid of Equals)
+Main page showing a list of numbers that are available for bidding.
+- states for every numbers (A list)
+- highline selected number
+
+Page 2: (Box Layout)
+Page to display bidding status to bidders.
+- display bidding number
+- display current price
+- display bidding placement options
+- display timer
+- some decorations
+
+Page 3: (Box Layout)
+Display bidding result for a number.
+- vanity number
+- final price
+- winner id
+
+For operators:
+---------------------------------------------------------
+
+Page 1: (Center Stage) (Grid of Equals)
+Main page showing a list of numbers that are available for bidding.
+- states for every numbers (A list)
+- select a number to continue (pop a confirm)
+- button to start a new auction (start Page 5)
+- button to end auction when no number available (pop a confirm)
+- button for system setting (start Page 4)
+
+Page 2:
+Page to display bidding status to bidders.
+- display bidding number
+- display current price
+- display bidding placement options
+- display timer
+- some decorations
+
+Page 3: (Self-Adjusting Layout) (Center Stage)
+Page for operator to control the auction.
+- displays:
+    - current bidding number
+    - current price
+    - timer
+    - small window preview of Page 2
+- buttons:
+    - pause & resume
+    - undo and redo (need authorization)
+    - button group for prices (pop dialog to enter user id)
+    - button for system setting (start Page 4)
+    - end bidding (pop confirm)
+
+Page 4: (Left-Right Alignment) (Responsive Enabling)
+Configure box to configure the system settings.
+
+Page 5: ()
+A wizard to create a new auction.
+- browse system to get auction data file (csv)
+- load unfinished auction/bids
+
+Page 6:
+Retrieve the list of participating bidders.
+
+Page 7:
+Wizard for a specific bid?
+- time limit
+- bidding placement options
+- maximum bidder number
+
+
