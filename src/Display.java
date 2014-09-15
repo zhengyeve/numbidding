@@ -25,75 +25,75 @@ public class Display extends javax.swing.JPanel {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
-    jPanel1 = new javax.swing.JPanel();
-    jLabel2 = new javax.swing.JLabel();
-    jLabel1 = new javax.swing.JLabel();
-    jLabel8 = new javax.swing.JLabel();
-    jLabel9 = new javax.swing.JLabel();
-    jPanel3 = new javax.swing.JPanel();
-    jLabel3 = new javax.swing.JLabel();
-    jLabel4 = new javax.swing.JLabel();
-    jLabel5 = new javax.swing.JLabel();
-    jPanel2 = new javax.swing.JPanel();
-    jLabel6 = new javax.swing.JLabel();
-    jLabel7 = new javax.swing.JLabel();
+    biddingPanel = new javax.swing.JPanel();
+    placement1Label = new javax.swing.JLabel();
+    palcement2Label = new javax.swing.JLabel();
+    placement3Label = new javax.swing.JLabel();
+    placement4Label = new javax.swing.JLabel();
+    displayPanel = new javax.swing.JPanel();
+    priceInfoLabel = new javax.swing.JLabel();
+    bidderInfoLabel = new javax.swing.JLabel();
+    timeInfoLabel = new javax.swing.JLabel();
+    titlePanel = new javax.swing.JPanel();
+    biddingInfoLabel = new javax.swing.JLabel();
+    biddingItemLabel = new javax.swing.JLabel();
 
     setLayout(new java.awt.BorderLayout());
 
-    jPanel1.setLayout(new java.awt.GridLayout());
+    biddingPanel.setLayout(new java.awt.GridLayout());
 
-    jLabel2.setText("BP1");
-    jPanel1.add(jLabel2);
+    placement1Label.setText("BP1");
+    biddingPanel.add(placement1Label);
 
-    jLabel1.setText("BP2");
-    jPanel1.add(jLabel1);
+    palcement2Label.setText("BP2");
+    biddingPanel.add(palcement2Label);
 
-    jLabel8.setText("BP3");
-    jPanel1.add(jLabel8);
+    placement3Label.setText("BP3");
+    biddingPanel.add(placement3Label);
 
-    jLabel9.setText("BP3");
-    jPanel1.add(jLabel9);
+    placement4Label.setText("BP3");
+    biddingPanel.add(placement4Label);
 
-    add(jPanel1, java.awt.BorderLayout.PAGE_END);
+    add(biddingPanel, java.awt.BorderLayout.PAGE_END);
 
-    jPanel3.setLayout(new java.awt.GridLayout(3, 2));
+    displayPanel.setLayout(new java.awt.GridLayout(3, 2));
 
-    jLabel3.setText("Current Price:");
-    jPanel3.add(jLabel3);
+    priceInfoLabel.setText("Current Price:");
+    displayPanel.add(priceInfoLabel);
 
-    jLabel4.setText("Highest Bidder:");
-    jPanel3.add(jLabel4);
+    bidderInfoLabel.setText("Highest Bidder:");
+    displayPanel.add(bidderInfoLabel);
 
-    jLabel5.setText("Time Remaining:");
-    jPanel3.add(jLabel5);
+    timeInfoLabel.setText("Time Remaining:");
+    displayPanel.add(timeInfoLabel);
 
-    add(jPanel3, java.awt.BorderLayout.CENTER);
+    add(displayPanel, java.awt.BorderLayout.CENTER);
 
-    jPanel2.setLayout(new java.awt.GridLayout());
+    titlePanel.setLayout(new java.awt.GridLayout());
 
-    jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-    jLabel6.setText("Currently Bidding on:");
-    jPanel2.add(jLabel6);
+    biddingInfoLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+    biddingInfoLabel.setText("Currently Bidding on:");
+    titlePanel.add(biddingInfoLabel);
 
-    jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-    jLabel7.setText("650-777-777");
-    jPanel2.add(jLabel7);
+    biddingItemLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+    biddingItemLabel.setText("650-777-777");
+    titlePanel.add(biddingItemLabel);
 
-    add(jPanel2, java.awt.BorderLayout.NORTH);
+    add(titlePanel, java.awt.BorderLayout.NORTH);
   }// </editor-fold>//GEN-END:initComponents
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.JLabel jLabel1;
-  private javax.swing.JLabel jLabel2;
-  private javax.swing.JLabel jLabel3;
-  private javax.swing.JLabel jLabel4;
-  private javax.swing.JLabel jLabel5;
-  private javax.swing.JLabel jLabel6;
-  private javax.swing.JLabel jLabel7;
-  private javax.swing.JLabel jLabel8;
-  private javax.swing.JLabel jLabel9;
-  private javax.swing.JPanel jPanel1;
-  private javax.swing.JPanel jPanel2;
-  private javax.swing.JPanel jPanel3;
+  private javax.swing.JLabel bidderInfoLabel;
+  private javax.swing.JLabel biddingInfoLabel;
+  private javax.swing.JLabel biddingItemLabel;
+  private javax.swing.JPanel biddingPanel;
+  private javax.swing.JPanel displayPanel;
+  private javax.swing.JLabel palcement2Label;
+  private javax.swing.JLabel placement1Label;
+  private javax.swing.JLabel placement3Label;
+  private javax.swing.JLabel placement4Label;
+  private javax.swing.JLabel priceInfoLabel;
+  private javax.swing.JLabel timeInfoLabel;
+  private javax.swing.JPanel titlePanel;
   // End of variables declaration//GEN-END:variables
 }

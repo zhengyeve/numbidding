@@ -25,43 +25,43 @@ public class Result extends javax.swing.JPanel {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
-    jLabel1 = new javax.swing.JLabel();
+    congratsLabel = new javax.swing.JLabel();
     jPanel1 = new javax.swing.JPanel();
-    jLabel4 = new javax.swing.JLabel();
-    jLabel2 = new javax.swing.JLabel();
-    jLabel3 = new javax.swing.JLabel();
+    winnerLabel = new javax.swing.JLabel();
+    itemLabel = new javax.swing.JLabel();
+    priceLabel = new javax.swing.JLabel();
 
     setLayout(new java.awt.BorderLayout());
 
-    jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    jLabel1.setText("Congratulations!");
-    jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-    add(jLabel1, java.awt.BorderLayout.PAGE_START);
+    congratsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+    congratsLabel.setText("Congratulations!");
+    congratsLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+    add(congratsLabel, java.awt.BorderLayout.PAGE_START);
 
     jPanel1.setLayout(new java.awt.GridLayout(3, 3));
 
-    jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    jLabel4.setText("Winner:");
-    jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-    jPanel1.add(jLabel4);
+    winnerLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+    winnerLabel.setText("Winner:");
+    winnerLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+    jPanel1.add(winnerLabel);
 
-    jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    jLabel2.setText("Auction Item:");
-    jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-    jPanel1.add(jLabel2);
+    itemLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+    itemLabel.setText("Auction Item:");
+    itemLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+    jPanel1.add(itemLabel);
 
-    jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    jLabel3.setText("Final Price:");
-    jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-    jPanel1.add(jLabel3);
+    priceLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+    priceLabel.setText("Final Price:");
+    priceLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+    jPanel1.add(priceLabel);
 
     add(jPanel1, java.awt.BorderLayout.CENTER);
   }// </editor-fold>//GEN-END:initComponents
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.JLabel jLabel1;
-  private javax.swing.JLabel jLabel2;
-  private javax.swing.JLabel jLabel3;
-  private javax.swing.JLabel jLabel4;
+  private javax.swing.JLabel congratsLabel;
+  private javax.swing.JLabel itemLabel;
   private javax.swing.JPanel jPanel1;
+  private javax.swing.JLabel priceLabel;
+  private javax.swing.JLabel winnerLabel;
   // End of variables declaration//GEN-END:variables
 }

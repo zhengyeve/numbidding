@@ -1,3 +1,5 @@
+
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -25,6 +27,7 @@ public class Home extends javax.swing.JFrame {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
+    jPanel2 = new javax.swing.JPanel();
     jLabel1 = new javax.swing.JLabel();
     jPanel1 = new javax.swing.JPanel();
     startButton = new javax.swing.JButton();
@@ -33,6 +36,17 @@ public class Home extends javax.swing.JFrame {
     jScrollPane1 = new javax.swing.JScrollPane();
     biddingItemList = new javax.swing.JList();
 
+    javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+    jPanel2.setLayout(jPanel2Layout);
+    jPanel2Layout.setHorizontalGroup(
+      jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGap(0, 100, Short.MAX_VALUE)
+    );
+    jPanel2Layout.setVerticalGroup(
+      jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGap(0, 100, Short.MAX_VALUE)
+    );
+
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
     jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -40,6 +54,11 @@ public class Home extends javax.swing.JFrame {
 
     startButton.setText("Start Bidding");
     startButton.setEnabled(false);
+    startButton.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        startButtonMouseClicked(evt);
+      }
+    });
 
     cancelButton.setText("Cancel");
 
@@ -72,6 +91,11 @@ public class Home extends javax.swing.JFrame {
       public int getSize() { return strings.length; }
       public Object getElementAt(int i) { return strings[i]; }
     });
+    biddingItemList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+      public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+        biddingItemListValueChanged(evt);
+      }
+    });
     jScrollPane1.setViewportView(biddingItemList);
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -102,6 +126,16 @@ public class Home extends javax.swing.JFrame {
 
     pack();
   }// </editor-fold>//GEN-END:initComponents
+
+  private void startButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startButtonMouseClicked
+                
+        
+  }//GEN-LAST:event_startButtonMouseClicked
+
+  private void biddingItemListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_biddingItemListValueChanged
+    // TODO add your handling code here:
+    startButton.setEnabled(rootPaneCheckingEnabled);
+  }//GEN-LAST:event_biddingItemListValueChanged
 
   /**
    * @param args the command line arguments
@@ -143,6 +177,7 @@ public class Home extends javax.swing.JFrame {
   private javax.swing.JButton configButton;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JPanel jPanel1;
+  private javax.swing.JPanel jPanel2;
   private javax.swing.JScrollPane jScrollPane1;
   private javax.swing.JButton startButton;
   // End of variables declaration//GEN-END:variables
