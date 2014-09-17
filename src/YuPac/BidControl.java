@@ -11,6 +11,8 @@ package YuPac;
  */
 public class BidControl extends javax.swing.JFrame {
 
+    private int currentPrice = 20;
+    private int currentBidder = 1;
     /**
      * Creates new form BidControl
      */
@@ -271,6 +273,8 @@ public class BidControl extends javax.swing.JFrame {
     this.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
     this.setVisible(false);
     this.dispose();
+    javax.swing.JFrame result = new ResultDisplay(currentPrice, currentBidder);
+    result.setVisible(true);
   }//GEN-LAST:event_endButtonMouseClicked
 
   private void placementValue3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placementValue3ActionPerformed
