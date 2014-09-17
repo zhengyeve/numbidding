@@ -261,6 +261,7 @@
         <Component class="javax.swing.JButton" name="placementValue1">
           <Properties>
             <Property name="text" type="java.lang.String" value="$10"/>
+            <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="placementValue1ActionPerformed"/>
@@ -269,6 +270,8 @@
         <Component class="javax.swing.JButton" name="placementValue2">
           <Properties>
             <Property name="text" type="java.lang.String" value="$20"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="placementValue2ActionPerformed"/>
@@ -277,6 +280,7 @@
         <Component class="javax.swing.JButton" name="placementValue3">
           <Properties>
             <Property name="text" type="java.lang.String" value="$30"/>
+            <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="placementValue3ActionPerformed"/>
@@ -285,6 +289,7 @@
         <Component class="javax.swing.JButton" name="placementValue4">
           <Properties>
             <Property name="text" type="java.lang.String" value="$40"/>
+            <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="placementValue4ActionPerformed"/>
@@ -293,6 +298,7 @@
         <Component class="javax.swing.JButton" name="placementValue5">
           <Properties>
             <Property name="text" type="java.lang.String" value="$50"/>
+            <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="placementValue5ActionPerformed"/>
