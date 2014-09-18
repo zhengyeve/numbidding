@@ -9,6 +9,10 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.Timer;
 
 /**
@@ -369,15 +373,22 @@ public class BidControl extends javax.swing.JFrame {
         // TODO add your handling code here:
         if (currentBid > 0)
         {
-            currentPrice += currentBid;
-            currentPriceLabel.setText("$"+currentPrice+".00");
-            highestBidder = Integer.parseInt(tfBidderID.getText());
-            lbHighBidder.setText("Highest Bidder: "+ highestBidder);
-            // reset
-            currentBid = 0;
-            tfBidderID.setEnabled(false);
-            tfBidderID.setText("ID");
-            resetBtnPlacementColor();
+            if (isInteger(tfBidderID.getText()))
+            {
+                currentPrice += currentBid;
+                currentPriceLabel.setText("$"+currentPrice+".00");
+                highestBidder = Integer.parseInt(tfBidderID.getText());
+                lbHighBidder.setText("Highest Bidder: "+ highestBidder);
+                // reset
+                currentBid = 0;
+                tfBidderID.setEnabled(false);
+                tfBidderID.setText("ID");
+                resetBtnPlacementColor();
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(this, "Bidder ID must be a number.");
+            }
         }
     }//GEN-LAST:event_btnSubmitActionPerformed
 
@@ -433,6 +444,19 @@ public class BidControl extends javax.swing.JFrame {
         placementValue3.setBackground(null);
         placementValue4.setBackground(null);
         placementValue5.setBackground(null);
+    }
+    
+    public boolean isInteger(String input)  
+    {
+        try
+        {
+            Integer.parseInt(input);
+            return true;
+        }
+        catch(Exception e)
+        {  
+            return false;  
+        }  
     }
     /**
      * @param args the command line arguments
