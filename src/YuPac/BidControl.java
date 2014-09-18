@@ -5,8 +5,10 @@
  */
 package YuPac;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JButton;
 import javax.swing.Timer;
 
 /**
@@ -61,7 +63,7 @@ public class BidControl extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         tfBidderID = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnSubmit = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -247,10 +249,10 @@ public class BidControl extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("OK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnSubmit.setText("OK");
+        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnSubmitActionPerformed(evt);
             }
         });
 
@@ -290,7 +292,7 @@ public class BidControl extends javax.swing.JFrame {
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnSubmit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
         );
         layout.setVerticalGroup(
@@ -308,7 +310,7 @@ public class BidControl extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(tfBidderID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1)))
+                        .addComponent(btnSubmit)))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
@@ -334,36 +336,36 @@ public class BidControl extends javax.swing.JFrame {
 
     private void placementValue1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placementValue1ActionPerformed
         // TODO add your handling code here:
-        enable_bidder_id_tf(10);
+        enableTfBidderID(10, (JButton)evt.getSource());
         renewTimer();
         placementValue1.setSelected(true);
     }//GEN-LAST:event_placementValue1ActionPerformed
 
     private void placementValue2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placementValue2ActionPerformed
         // TODO add your handling code here:
-        enable_bidder_id_tf(20);
+        enableTfBidderID(20, (JButton)evt.getSource());
         renewTimer();
     }//GEN-LAST:event_placementValue2ActionPerformed
 
     private void placementValue3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placementValue3ActionPerformed
         // TODO add your handling code here:
-        enable_bidder_id_tf(30);
+        enableTfBidderID(30, (JButton)evt.getSource());
         renewTimer();
     }//GEN-LAST:event_placementValue3ActionPerformed
 
     private void placementValue4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placementValue4ActionPerformed
         // TODO add your handling code here:
-        enable_bidder_id_tf(40);
+        enableTfBidderID(40, (JButton)evt.getSource());
         renewTimer();
     }//GEN-LAST:event_placementValue4ActionPerformed
 
     private void placementValue5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placementValue5ActionPerformed
         // TODO add your handling code here:
-        enable_bidder_id_tf(50);
+        enableTfBidderID(50, (JButton)evt.getSource());
         renewTimer();
     }//GEN-LAST:event_placementValue5ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
         // TODO add your handling code here:
         if (currentBid > 0)
         {
@@ -375,8 +377,9 @@ public class BidControl extends javax.swing.JFrame {
             currentBid = 0;
             tfBidderID.setEnabled(false);
             tfBidderID.setText("ID");
+            resetBtnPlacementColor();
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnSubmitActionPerformed
 
     private class TimerListener implements ActionListener{
  
@@ -412,13 +415,24 @@ public class BidControl extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jLabel4MouseClicked
 
-    private void enable_bidder_id_tf(int bid)
+    private void enableTfBidderID(int bid, JButton btnPlacement)
     {
         currentBid = bid;
- 
+        
+        resetBtnPlacementColor();
+        btnPlacement.setBackground(Color.white);
         tfBidderID.setEnabled(true);
         tfBidderID.requestFocus();
         tfBidderID.setText(null);
+    }
+    
+    private void resetBtnPlacementColor()
+    {
+        placementValue1.setBackground(null);
+        placementValue2.setBackground(null);
+        placementValue3.setBackground(null);
+        placementValue4.setBackground(null);
+        placementValue5.setBackground(null);
     }
     /**
      * @param args the command line arguments
@@ -456,9 +470,9 @@ public class BidControl extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSubmit;
     private javax.swing.JLabel currentPriceLabel;
     private javax.swing.JButton endButton;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
