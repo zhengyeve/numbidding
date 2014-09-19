@@ -35,6 +35,7 @@ public class BidControl extends javax.swing.JFrame {
      */
     public BidControl() {
         initComponents();
+        tmr = new Timer(1000, new TimerListener());
     }
 
     /**
@@ -421,7 +422,6 @@ public class BidControl extends javax.swing.JFrame {
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         if(jLabel4.isEnabled()) {
             jLabel4.setEnabled(false);
-            tmr = new Timer(1000, new TimerListener());
             tmr.start();
         }
     }//GEN-LAST:event_jLabel4MouseClicked
