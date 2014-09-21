@@ -30,12 +30,15 @@ public class BidControl extends javax.swing.JFrame {
      */
     public static int timeout = 30;
     private Timer tmr;
+    
+    private boolean pausedflag;
     /**
      * Creates new form BidControl
      */
     public BidControl() {
         initComponents();
         tmr = new Timer(1000, new TimerListener());
+        pausedflag=false;
     }
 
     /**
@@ -78,6 +81,11 @@ public class BidControl extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         pauseButton.setText("Pause");
+        pauseButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pauseButtonMouseClicked(evt);
+            }
+        });
 
         endButton.setText("End");
         endButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -425,6 +433,17 @@ public class BidControl extends javax.swing.JFrame {
             tmr.start();
         }
     }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void pauseButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pauseButtonMouseClicked
+        // TODO add your handling code here:
+        if(!pausedflag && jLabel4.isEnabled() == false) {
+           tmr.stop();
+           pausedflag = true;
+        }else if(pausedflag && jLabel4.isEnabled() == false) {
+            tmr.start();
+            pausedflag = false;
+        }
+    }//GEN-LAST:event_pauseButtonMouseClicked
 
     private void enableTfBidderID(int bid, JButton btnPlacement)
     {
