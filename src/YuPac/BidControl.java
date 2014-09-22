@@ -396,7 +396,15 @@ public class BidControl extends javax.swing.JFrame {
             }
             else
             {
-                JOptionPane.showMessageDialog(this, "Bidder ID must be a number.");
+                if (tfBidderID.getText().equals(""))
+                {
+                    JOptionPane.showMessageDialog(this, "Bidder ID is required.");
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog(this, "Bidder ID must be a number.");
+                }
+                
             }
         }
     }//GEN-LAST:event_btnSubmitActionPerformed
