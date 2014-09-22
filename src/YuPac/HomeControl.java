@@ -15,6 +15,7 @@ public class HomeControl extends javax.swing.JFrame {
   
     private javax.swing.JDialog bconf = new BidConfigDialog(this, true);
     private javax.swing.JDialog wzd = new BidInitWizardDialog(this, true);
+
   /**
      * Creates new form HomeControl
      */

@@ -104,7 +104,7 @@
                               <Component id="startPriceValue" alignment="0" max="32767" attributes="0"/>
                               <Component id="timerValue" alignment="0" pref="69" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="75" max="32767" attributes="0"/>
+                          <EmptySpace pref="96" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -123,15 +123,25 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="24" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="pricePlacementValue1" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="pricePlacementValue2" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="pricePlacementValue3" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="pricePlacementValue4" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="pricePlacementValue5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="pricePlacementValue1" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="pricePlacementValue2" min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace pref="35" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="pricePlacementValue3" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="pricePlacementValue4" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="pricePlacementValue5" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -207,27 +217,27 @@
         </Component>
         <Component class="javax.swing.JTextField" name="pricePlacementValue1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="placement1"/>
+            <Property name="text" type="java.lang.String" value="10"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="pricePlacementValue2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="placement2"/>
+            <Property name="text" type="java.lang.String" value="20"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="pricePlacementValue3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="placement3"/>
+            <Property name="text" type="java.lang.String" value="30"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="pricePlacementValue4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="placement4"/>
+            <Property name="text" type="java.lang.String" value="40"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="pricePlacementValue5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="placement5"/>
+            <Property name="text" type="java.lang.String" value="50"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
@@ -247,12 +257,12 @@
         </Component>
         <Component class="javax.swing.JTextField" name="timerValue">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Enter Timer"/>
+            <Property name="text" type="java.lang.String" value="30"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="startPriceValue">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Enter Price"/>
+            <Property name="text" type="java.lang.String" value="20"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
