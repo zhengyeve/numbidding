@@ -263,6 +263,7 @@ public class BidControl extends javax.swing.JFrame {
         });
 
         btnSubmit.setText("OK");
+        btnSubmit.setEnabled(false);
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmitActionPerformed(evt);
@@ -390,6 +391,7 @@ public class BidControl extends javax.swing.JFrame {
                 lbHighBidder.setText("Highest Bidder: "+ highestBidder);
                 // reset
                 currentBid = 0;
+                btnSubmit.setEnabled(false);
                 tfBidderID.setEnabled(false);
                 tfBidderID.setText("ID");
                 resetBtnPlacementColor();
@@ -459,6 +461,7 @@ public class BidControl extends javax.swing.JFrame {
         
         resetBtnPlacementColor();
         btnPlacement.setBackground(Color.white);
+        btnSubmit.setEnabled(true);
         tfBidderID.setEnabled(true);
         tfBidderID.requestFocus();
         tfBidderID.setText(null);
