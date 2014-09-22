@@ -187,7 +187,7 @@
               <Font name="Dialog" size="24" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="123-456-7890"/>
+            <Property name="text" type="java.lang.String" value="800-BUY-HOME"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="currentPriceLabel">
@@ -340,7 +340,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="System Logo &amp; Title"/>
+            <Property name="text" type="java.lang.String" value="Bid For Your Business"/>
           </Properties>
         </Component>
       </SubComponents>

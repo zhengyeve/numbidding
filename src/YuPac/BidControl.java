@@ -134,7 +134,7 @@ public class BidControl extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("123-456-7890");
+        jLabel2.setText("800-BUY-HOME");
         jPanel2.add(jLabel2);
 
         currentPriceLabel.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -232,7 +232,7 @@ public class BidControl extends javax.swing.JFrame {
         );
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel1.setText("System Logo & Title");
+        jLabel1.setText("Bid For Your Business");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
