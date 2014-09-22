@@ -4,18 +4,28 @@
  */
 package YuPac;
 
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author Owner
  */
 public class BidConfigDialog extends javax.swing.JDialog {
 
+  private DefaultListModel listModel;  
+    
   /**
    * Creates new form BidConfigDialog
    */
   public BidConfigDialog(java.awt.Frame parent, boolean modal) {
     super(parent, modal);
     initComponents();
+    listModel = new DefaultListModel();
+    listModel.addElement("800-BUY-Home");
+    listModel.addElement("800-GOO-DCAR");
+    listModel.addElement("800-BUY-BOOK");
+    listModel.addElement("800-SAL-ECAR");
+    jList1.setModel(listModel);
   }
 
   /**

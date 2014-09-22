@@ -5,6 +5,8 @@
  */
 package YuPac;
 
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author yufan
@@ -15,6 +17,7 @@ public class HomeControl extends javax.swing.JFrame {
   
     private javax.swing.JDialog bconf = new BidConfigDialog(this, true);
     private javax.swing.JDialog wzd = new BidInitWizardDialog(this, true);
+    private DefaultListModel listModel;
 
   /**
      * Creates new form HomeControl
@@ -23,6 +26,12 @@ public class HomeControl extends javax.swing.JFrame {
         initComponents();
         bconf.setVisible(false);
         wzd.setVisible(false);
+        listModel = new DefaultListModel();
+        listModel.addElement("800-BUY-Home");
+        listModel.addElement("800-GOO-DCAR");
+        listModel.addElement("800-BUY-BOOK");
+        listModel.addElement("800-SAL-ECAR");
+        jList1.setModel(listModel);
     }
 
     /**
